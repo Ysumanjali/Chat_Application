@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Container for the chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Input fields and button */
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat history */
+.chat-history {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.chat-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-history li {
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.chat-history li:hover {
+  background-color: #e2e6ea;
+}
+
+.timestamp {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 12px;
+  color: #aaa;
+}
